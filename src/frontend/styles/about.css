@@ -1,0 +1,15 @@
+body{
+    display: block;
+}
+
+.about-container{
+    width: 85%;
+    float: right;    
+    height: 100vh;
+    margin: auto;
+    background-image: url("../images/about-background.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;     
+    background-position: center;    
+}
