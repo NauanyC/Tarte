@@ -14,6 +14,14 @@ const indexController = {
 
     menu: function menu(req, res){
         res.render("navbar/menu");
+    },
+
+    login: function login(req, res){
+        res.render("auth/login");
+    },
+
+    register: function register(req, res){
+        res.render("auth/register");
     }
 
 };

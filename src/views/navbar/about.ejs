@@ -1,24 +1,66 @@
 <%- include ("../partials/header") -%> 
-         
-    <main>
-        <div class="about-container">
-           <div class="about-us">
-               <h1>About us</h1>
-               <p>
-                    Duis quis eros non nisi volutpat gravida et eget augue. Phasellus sed finibus justo. In aliquet nibh eget elementum laoreet. Sed condimentum dolor eget scelerisque mattis. Sed ut lorem ex. Donec et convallis erat. Aenean nibh tellus, auctor et eros in, mollis placerat nulla. Proin eros tellus, laoreet eget blandit eu, pharetra eget lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean lobortis euismod tortor. Pellentesque sodales eros quis velit gravida pretium at nec magna. Cras leo mi, semper tempor sem pharetra, gravida elementum sapien.
-               </p>
-               <p>
-                    Cras in dolor leo. In faucibus eros non iaculis dictum. Sed placerat, lorem at rhoncus vestibulum, nunc dolor feugiat nisl, in eleifend quam quam at risus. Nunc volutpat dignissim mattis. Vestibulum sed posuere velit. Sed a ornare urna, nec efficitur nibh. Cras ultrices rutrum lacus. Sed blandit dolor interdum felis volutpat auctor. Phasellus eget tempus dui, ut pulvinar est. Pellentesque odio nulla, eleifend at sollicitudin sit amet, pulvinar ac velit. Nullam elit urna, tempus vel dolor non, lacinia semper mauris. In aliquam libero ut lorem vehicula, in sodales quam viverra. Donec et quam risus. Aliquam vitae metus faucibus, consequat tortor vitae, convallis sem.
-               </p>
-               <p>
-                    Duis quis eros non nisi volutpat gravida et eget augue. Phasellus sed finibus justo. In aliquet nibh eget elementum laoreet. Sed condimentum dolor eget scelerisque mattis. Sed ut lorem ex. Donec et convallis erat. Aenean nibh tellus, auctor et eros in, mollis placerat nulla. Proin eros tellus, laoreet eget blandit eu, pharetra eget lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean lobortis euismod tortor. Pellentesque sodales eros quis velit gravida pretium at nec magna. Cras leo mi, semper tempor sem pharetra, gravida elementum sapien.
-                </p>
-                <p>
-                    Cras in dolor leo. In faucibus eros non iaculis dictum. Sed placerat, lorem at rhoncus vestibulum, nunc dolor feugiat nisl, in eleifend quam quam at risus. Nunc volutpat dignissim mattis. Vestibulum sed posuere velit. Sed a ornare urna, nec efficitur nibh. Cras ultrices rutrum lacus. Sed blandit dolor interdum felis volutpat auctor. Phasellus eget tempus dui, ut pulvinar est. Pellentesque odio nulla, eleifend at sollicitudin sit amet, pulvinar ac velit. Nullam elit urna, tempus vel dolor non, lacinia semper mauris. In aliquam libero ut lorem vehicula, in sodales quam viverra. Donec et quam risus. Aliquam vitae metus faucibus, consequat tortor vitae, convallis sem.
-                </p>
-           </div>  
-        </div>
-    </main>
-        
 
+    <div class="about">
+        <div class="row about-page-container">
+
+            <!-- about us -->
+            <div class="col-lg-8">
+                <div class="box-section about-us">
+                    <h1>About us</h1>
+                    <h3>Cause everybody loves pasta.</h3>
+                    <div class="about-content">
+
+                        <!-- left -->
+                        <p class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet mauris est, eu 
+                            egestas sem pellentesque ut. Curabitur a malesuada elit. Sed a quam sollicitudin, 
+                            vehicula odio vel, vestibulum enim. Sed id ipsum eget lorem consectetur varius a quis 
+                            mi. 
+                        </p>
+
+                        <!-- right -->
+                        <div id="team-member"> 
+                            <p><strong>Team:</strong></p>
+                            <img src="https://images.unsplash.com/photo-1551218370-44f5d7748b18?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="">
+                            <p><strong>Joseph/Cooker</strong></p>
+                            <button type="button" class="btn btn-outline-dark btn-lg">
+                                <i class="fa fa-arrow-right"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>                
+            </div>
+
+            <div class="col-lg-4">
+                <div class="row">
+
+                    <!-- contact us -->
+                   <div class="col-lg-12">
+                       <div class="box-section contact-us">
+                           <h3>Contact</h3>
+                           <form action="">
+                                <input type="text" placeholder="Name">
+                                <input type="text" placeholder="Email">
+                                <textarea name="" id="" cols="10" rows="3" placeholder="Your message"></textarea>
+                            </form>
+                       </div>
+                    </div>
+
+                   <!-- work here -->
+                   <div class="col-lg-12">
+                        <div class="box-section work-here">
+                            <h3>Work here</h3>
+                            <form action="">
+                                <input type="text" placeholder="Name">
+                                <input type="text" placeholder="Email">
+                                <input type="file" accept="pdf">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+           
 <%- include ("../partials/footer") -%> 

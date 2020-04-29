@@ -1,4 +1,17 @@
+            
+            </div><!-- end of container-fluid --> 
+        </div><!-- end of page-content-wrapper -->      
+      
+    </div><!-- end of wrapper --> 
 
-    <p>footer</p>
+    <script>
+        const menuToggler = document.querySelector("#menu-toggler");
+        const wrapper = document.querySelector("#wrapper");
+                
+        menuToggler.addEventListener("click", (event) => {
+            event.preventDefault();
+            wrapper.classList.toggle("menuDisplayed");
+        });
+    </script>
 </body>
 </html>
