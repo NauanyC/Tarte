@@ -1,11 +1,12 @@
 <%- include ("../partials/header") -%> 
 
-    <p>Edit dish</p>
+<h1 style="text-align: center;">Edit dish</h1>
 
-    <form action="">
-        <input type="text" placeholder="Dish Name">
-        <input type="text" placeholder="Price">
-        <textarea name="" id="" cols="30" rows="10" placeholder="description"></textarea>
-    </form>
+<form action="" class="box-section">
+    <input type="text" placeholder="Dish Name" name="dish[name]">
+    <input type="text" placeholder="Price" name="dish[price]">
+    <textarea name="" id="" cols="30" rows="10" placeholder="dish[description]"></textarea>
+    <button class="btn-lg">Edit</button>
+</form>
 
 <%- include ("../partials/footer") -%> 

@@ -1,11 +1,13 @@
 <%- include ("../partials/header") -%> 
 
-    <p>New dish</p>
+    <h1 style="text-align: center;">New dish</h1>
 
-    <form action="">
-        <input type="text" placeholder="Dish Name">
-        <input type="text" placeholder="Price">
-        <textarea name="" id="" cols="30" rows="10" placeholder="description"></textarea>
+    <form action="/menu" method="POST" class="box-section">
+        <input type="text" placeholder="Dish Name" name="name">
+        <input type="text" placeholder="Price" name="price">
+        <input type="text" placeholder="Image" name="image">
+        <textarea placeholder="Description" cols="6" rows="6" name="description"></textarea>
+        <button class="btn-lg">New</button>
     </form>
 
 <%- include ("../partials/footer") -%> 
