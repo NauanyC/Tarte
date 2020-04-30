@@ -231,43 +231,52 @@ body{
 }
 
 .dish{
-    display: grid;
-    grid-template-areas: "dish-img dish-description"
-                         "dish-price ."
-                         "dish-stars dish-btn";
-    grid-gap: 4px;    
-    grid-template-columns: 50% 50%;
+    display: grid;    
+    line-height: 1.1;
+    grid-template-columns: 145px 1fr;      
     font-family: 'Sacramento', sans-serif;
     font-size: 30px;
     color: black;
     font-weight: 600;
-    text-align: left;
+    text-align: center;
     margin-left: 10px;
 }
 
 .dish-img{
-    width: 150px;
-    height: 120px;
+    width: 100%;
     border-radius: 50%;
-    grid-area: dish-img;
 }
 
-.dish-description{
-    grid-area: dish-description;        
-    font-weight: 500;
+.dish figcaption{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.dish-description{  
+    font-weight: 500;        
+    text-align: left;
+    width: 85%;
+    margin: 5px auto;
 }
 
 .dish-price{    
-    grid-area: dish-price;    
-    font-size: 0.8em;
-}
-
-.dish-stars{
-    grid-area: dish-stars;
+    font-size: 0.8em;    
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: left;    
+    padding-left: 20px;
 }
 
 .dish-btn{
-    grid-area: dish-btn;
+    margin: 0 auto;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.dish-stars{    
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding-left: 10px;
 }
 
 .fa-star{
