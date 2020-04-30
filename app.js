@@ -29,12 +29,16 @@ connectDB();
 
 
 /* routers files */
-const Index  = require("./src/routes/index.route"); 
-const Menu   = require("./src/routes/dishes.route"); 
+const Index    = require("./src/routes/index.route"); 
+const Menu     = require("./src/routes/dishes.route"); 
+const Comments = require("./src/routes/comments.route");
+ 
 
 /* routes */
 app.use("/", Index);
 app.use("/Menu", Menu);
+app.use("/Menu/:id/Comments", Comments);
+
 
 
 

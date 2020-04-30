@@ -30,7 +30,6 @@ const dishesController = {
     /* gotta sanitize the routes later */
     create: async function create(req, res){        
         const newDish = (req.body);  
-        console.log(newDish); 
         Dish.create(newDish, function(error, newDish){
             if(error){
                 console.log("Sorry, couldn't save it!" + error);
