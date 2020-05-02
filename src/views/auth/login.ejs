@@ -1,9 +1,9 @@
 <%- include ("../partials/header") -%> 
 
-    <div class="profile">
-        <form action="/login" class="box-section">
-            <input type="text" placeholder="Nickname">            
-            <input type="password" placeholder="Password">
+    <div class="profile about-page-container">
+        <form action="/login" method="POST" class="box-section">
+            <input type="text" placeholder="Nickname" name="name">            
+            <input type="password" placeholder="Password" name="password">
             <button>Submit</button>
         </form>
     </div>

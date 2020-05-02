@@ -1,8 +1,14 @@
-const express    = require("express");
-const app        = express();
-const mongoose   = require("mongoose");
-const bodyParser = require("body-parser")
+const express          = require("express");
+const app              = express();
+const mongoose         = require("mongoose");
+const bodyParser       = require("body-parser");
+/* still gotta implement sanitizing */
 const expressSanitizer = require("express-sanitizer");
+const bcrypt           = require("bcrypt");
+const passport         = require("passport");
+const flash            = require("express-flash");
+const session          = require("express-session");
+const methodOverride   = require("method-override");
 
 /* configs */
 app.set("view engine", "ejs"); 
@@ -11,7 +17,6 @@ app.use(express.static(__dirname + '/src/public'));
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
-app.use(expressSanitizer());
 
 /* db connection */
 const URI = "mongodb+srv://Nau:Nau@cluster0-ocxup.mongodb.net/test?retryWrites=true&w=majority";
@@ -26,6 +31,8 @@ const connectDB = async() => {
 };
 
 connectDB();
+
+/* auth */
 
 
 /* routers files */
